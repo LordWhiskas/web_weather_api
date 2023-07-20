@@ -1,0 +1,354 @@
+.searchButton {
+    font-family: 'Courier New', monospace;
+    color: #00FF00;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-shadow: 0 0 10px rgb(0, 255, 0);
+    border: none;
+    background-color: transparent;
+    outline: none;
+    margin-right: 15px;
+}
+.firstButton{
+    font-family: 'Courier New', monospace;
+    color: #00FF00;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-shadow: 0 0 10px rgb(0, 255, 0);
+    border: none;
+    background-color: transparent;
+    outline: none;
+    margin: 400px 600px;
+    position: absolute;
+}
+.root {
+    display: flex;
+    max-height: 100vh;
+    /*background-image: linear-gradient(to top, lightgoldenroadyellow, white);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.textRoot {
+    font-family: 'Courier New', monospace;
+    color: #00FF00;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+
+}
+
+.textField:focus {
+    outline: none;
+}
+
+.smallCard {
+    width: 200px; /* уменьшенная ширина */
+    height: 75px; /* установите высоту, если это необходимо */
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 2px 3px -3px rgb(0 0 0 / 20%);
+    padding: 10px; /* уменьшенный padding */
+    border-radius: 25px;
+    border: 2px solid #00FF00;
+    position: relative; /* добавлено */
+    right: 0; /* добавлено */
+    margin-right: 15px; /* на ваше усмотрение */
+    margin-bottom: 20px;
+    margin-left: auto; /* Добавлено */
+}
+
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #00FF00;
+    margin-top: 20px;
+}
+
+.cityName {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    text-shadow: 0 0 10px rgb(0, 255, 0);
+}
+
+
+.columnContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 40px;
+    overflow: hidden;
+    border-radius: 25px;
+    flex: 1;
+}
+
+.columnSmallContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+
+
+
+.sidebar {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 20vh;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%), 0px 8px 10px 1px rgb(0 0 0 / 20%), 0px 3px 14px 2px rgb(0 0 0 / 15%);
+    margin-right: 50px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.matrixText {
+    font-family: 'Courier New, monospace';
+    color: #00FF00;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-shadow: 0 0 10px rgb(0, 255, 0);
+}
+
+.weatherDailyDegrees{
+    font-family: 'Courier New, monospace';
+    color: #00FF00;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-shadow: 0 0 10px rgb(0, 255, 0);
+    text-align: center;
+}
+
+.mainContent {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    width: 300px;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.4); /* здесь мы устанавливаем черный фон с небольшой прозрачностью */
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%), 0px 8px 10px 1px rgb(0 0 0 / 20%), 0px 3px 14px 2px rgb(0 0 0 / 15%);
+    padding: 20px;
+    border-radius: 25px;
+    border: 2px solid #00FF00;
+}
+
+
+.dataItem {
+    padding: 10px 0;
+    color: #aaa;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+    background-size: 800px 104px;
+    font-family: 'Courier New, monospace';
+}
+
+.raindrop {
+    position: absolute;
+    bottom: 100%;
+    width: 1px;
+    height: 50px;
+    background: rgba(255,255,255,0.6);
+    animation: fall linear infinite;
+}
+
+.sunshine {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 0, 0.5);
+    position: absolute;
+    animation: glow 2s infinite;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease-in;
+}
+
+.tvEffect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*animation: wave 10s linear infinite;*/
+}
+
+.greenOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,255,0,0.3); /* Зеленый цвет с прозрачностью 30% */
+    mix-blend-mode: color; /* Вы можете попробовать другие значения, такие как multiply, darken */
+    z-index: 0; /* Убедитесь, что он находится поверх вашего изображения */
+}
+
+
+
+
+.textField {
+    width: 90%;
+    font-family: 'Courier New, monospace';
+    color: #00FF00;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    outline: none; /* новое */
+    margin: 20px auto;
+
+}
+
+.input {
+    color: white;
+}
+
+/* Keyframes */
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px yellow;
+        opacity: 0.5;
+    }
+
+    50% {
+        box-shadow: 0 0 20px yellow, 0 0 30px yellow;
+        opacity: 1;
+    }
+
+    100% {
+        box-shadow: 0 0 5px yellow;
+        opacity: 0.5;
+    }
+}
+
+.weatherDegrees{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes noise {
+    0% {
+        filter: saturate(0);
+    }
+
+    50% {
+        filter: saturate(100%);
+    }
+
+    100% {
+        filter: saturate(0);
+    }
+}
+
+@keyframes wave {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(360deg);
+    }
+
+    100% {
+        filter: hue-rotate(0deg);
+    }
+}
+
+
+/* ./styles/MatrixEffect.css */
+
+.canvasContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.canvas {
+    width: 100%;
+    height: 100%;
+}
+#container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    animation: zoom 15s linear forwards;
+}
+
+@keyframes zoom {
+    to {
+        transform: scale(2.5);
+    }
+}
+
+#continueButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #0F0;
+    background-color: black;
+    border: 2px solid #0F0;
+    cursor: pointer;
+    display: none;
+}
+
+.wi-rotate-270 {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}

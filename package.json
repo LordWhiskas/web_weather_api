@@ -1,0 +1,28 @@
+{
+  "name": "web_weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.13.7",
+    "@mui/material": "^5.13.7",
+    "axios": "^1.4.0",
+    "express": "^4.18.2",
+    "next": "^13.4.9",
+    "node-fetch": "^3.3.1",
+    "react": "^18.2.0",
+    "react-places-autocomplete": "^7.3.0",
+    "react-transition-group": "^4.4.5",
+    "tss-react": "^4.8.6",
+    "uuid": "^9.0.0",
+    "weather-icons": "^1.3.2"
+  }
+}
